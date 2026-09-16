@@ -1,0 +1,24 @@
+### GET request to example server
+GET https://examples.http-client.intellij.net/get
+    ?generated-in=IntelliJ IDEA
+
+###查询全部
+GET http://localhost:8080/students
+
+
+###添加
+POST http://localhost:8080/students
+Content-Type: application/json
+
+{"name":"张三丰","age":18,"major":"物理学"}
+
+
+###修改
+PUT http://localhost:8080/students/11
+Content-Type: application/json
+
+{"name":"张丰","age": 20,"major": "网络工程"}
+
+
+###删除
+DELETE http://localhost:8080/students/11

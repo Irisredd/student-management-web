@@ -1,6 +1,13 @@
 package com.sake.studentmanagementweb.entity;
 
+import com.baomidou.mybatisplus.annotation.IdType;
+import com.baomidou.mybatisplus.annotation.TableId;
+import com.baomidou.mybatisplus.annotation.TableName;
+
+@TableName("student")//对应数据库哪张表
 public class Student {
+
+    @TableId(type = IdType.AUTO)//主键自增
     private int id;
     private String name;
     private int age;
